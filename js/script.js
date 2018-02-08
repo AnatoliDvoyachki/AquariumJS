@@ -13,7 +13,7 @@ function myloopedFunction(bubbleRef) {
     var pos1 = Math.round(Math.random() * 1500);
     var speed1 = Math.round(Math.random() * 10000 + 1500);
     $(bubbleRef).show().css({position: 'absolute', left: pos1, bottom: 0}); 
-            // For some reason it is reversed and it works... :)
+          
     
     $(bubbleRef).animate({bottom: 665}, speed1, 'linear', function () {myloopedFunction(bubbleRef)});
 }
